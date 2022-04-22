@@ -1,6 +1,6 @@
 # Upload das imagens
 /public/uploads/*
-!/public/uploads
+!/public/uploads/.gitkeep
 
 # Configurations database
 /src/shared/config/database.php
