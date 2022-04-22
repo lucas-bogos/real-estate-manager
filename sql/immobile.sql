@@ -5,6 +5,7 @@ CREATE TABLE immobile (
     room int NOT NULL,
     ApartamentID int UNSIGNED,
     HouseID int UNSIGNED,
+    imageImmobile varchar(200),
     PRIMARY KEY (ImmobileID),
     FOREIGN KEY (ApartamentID) REFERENCES apartament(ApartamentID),
     FOREIGN KEY (HouseID) REFERENCES house(HouseID)
