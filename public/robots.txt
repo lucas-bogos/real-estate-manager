@@ -1,5 +1,4 @@
 User-agent: *
 Allow: /
-Disallow: /sign-in
 Disallow: /nao-encontrado
 Disallow: /assets
