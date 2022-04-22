@@ -1,0 +1,19 @@
+{
+    "name": "lucas/real-estate-manager",
+    "description": "gerenciador de imobiliarias de casas e apartamentos",
+    "autoload": {
+        "psr-4": {
+            "source\\": "src/"
+        },
+        "files": [
+            "src/shared/config/database.php"
+        ]
+    },
+    "authors": [
+        {
+            "name": "Lucas Bogos",
+            "email": "bogoslucas1@gmail.com"
+        }
+    ],
+    "require": {}
+}

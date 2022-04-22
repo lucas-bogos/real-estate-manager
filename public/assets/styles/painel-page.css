@@ -1,0 +1,44 @@
+/* painel-page */
+#painel-page {
+    height: 95vh;
+    margin: 5px;
+    padding: 15px;
+    text-align: center;
+    font-family: 'Lucida Sans';
+    font-size: 16px;
+}
+
+#painel-page div {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#painel-page div input {
+    background-color: #ddd;
+    border-radius: 5px;
+    padding: 5px 0;
+    width: 70%;
+}
+
+#painel-page div label {
+    padding: 4px 0;
+}
+
+/* button */
+#button-sign {
+    width: 150px;
+    background-color: #04AA6D;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+}
+
+/* efeito no botão */
+#button-sign:hover {
+    background-color: #d8dbdb;
+    color: black;
+}

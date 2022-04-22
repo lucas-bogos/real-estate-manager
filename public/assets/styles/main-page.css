@@ -1,0 +1,85 @@
+/* header */
+
+
+
+  .header {
+    padding: 15px;
+    text-align: center;
+    font-family: 'Lucida Sans';
+    background: #00642d;
+    font-size: 12px;
+  }
+
+/* colunas iguais */
+
+.column {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: nowrap;
+    margin: 15px 0;
+    float: left;
+    width: 400px;
+    padding: 10px;
+    height: 550px;
+  }
+  
+
+  .row {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  /* floats */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+  .card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    max-width: 300px;
+    margin: auto;
+    text-align: center;
+    font-family: arial;
+    padding-bottom: 18px;
+  }
+
+  .card > img {
+    max-width: 500px;
+    max-height: 300px;
+  }
+  
+  .price {
+    margin: 5px;
+    color: #243535;
+    font-size: 22px;
+  }
+  
+  .card a {
+    border-radius: 5px;
+    text-decoration: none;
+    padding: 8px;
+    color: white;
+    background-color: #000;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+    font-size: 16px;
+  }
+  
+  .card a:hover {
+    opacity: 0.7;
+  }
+
+#title-city {
+    font-family: 'Lucida Sans Unicode Regular';
+    text-align: center;
+}
+
+.description {
+    margin: 7px;
+    padding-bottom: 10px;
+}

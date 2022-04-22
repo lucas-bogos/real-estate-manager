@@ -1,0 +1,85 @@
+body {
+    padding: 0;
+    margin: 0;
+    background-color: #243535;
+}
+
+/* login */
+
+#login {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode';
+}
+
+.card {
+    background-color: rgba(19, 19, 19, 0.3);
+    padding: 40px;
+    border-radius: 2px;
+    width:280px;
+}
+
+.card-header {
+    text-align: center;
+    padding-bottom: 15px;
+    opacity: 0.8;
+    color: #eaebeb;
+}
+
+.card-header img {
+    width: 90px;
+    height: 90px;
+}
+
+.card-content label {
+    color: #eaebeb;
+    font-size: 12px;
+    opacity: 0.8;
+}
+
+.card-content-area {
+    display: flex;
+    flex-direction: column;
+    padding: 10px 0;
+}
+
+.card-content-area input {
+    margin-top: 10px;
+    padding:0 5px;
+    background-color: transparent;
+    border:none;
+    border-bottom: 1px solid #eaebeb;
+    outline: none;
+    color: #eaebeb;
+}
+
+.card-footer {
+    display: flex;
+    flex-direction: column;
+}
+
+.card-footer .submit{
+    width: 100%;
+    height: 40px;
+    background-color: #00642d;
+    border:none;
+    color:#eaebeb;
+    margin: 10px 0;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.card-footer a {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 14px;
+    color: #eaebeb;
+    text-decoration: none;
+}
+
+.submit:hover {
+    border-radius: 10px;
+    background-color: rgb(40, 117, 40);
+}
