@@ -59,7 +59,7 @@ No caso, por ser um novo usuário, precisará fazer um cadastro para ter acesso 
 ## Cadastro do usuário
 ![Tela de Cadastro](img/registrar.png)
 
-Realizado o cadastro, poderá navegar e adicionar novos imóvel ao sistema.
+Realizado o cadastro, poderá navegar no sistema e adicionar novos imóveis, tanto casas como apartamentos.
 
 ## Adicione novos imóveis
 ![Tela de adicionar imóvel](img/adicionar-novo-imovel.png)
