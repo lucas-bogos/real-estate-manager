@@ -15,7 +15,7 @@ if($method == "POST") {
   $file = $_FILES["picture"]; 
 
   // string que irá para o banco de dados
-  $imageImmobile = $dir.$file["name"];
+  $imageImmobile = isset($_FILES["picture"]) ? '' : $dir.$file["name"];
 
   // Move o arquivo da pasta temporaria de upload para a pasta de destino 
   move_uploaded_file($file["tmp_name"], "$dir/".$file["name"]);

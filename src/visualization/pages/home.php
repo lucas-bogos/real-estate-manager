@@ -29,7 +29,7 @@
         $image = empty($immobile["imageImmobile"]) ? "/assets/images/sem-imagem.jpg" : "/".$immobile["imageImmobile"];
         $description = !isset($immobile["backyard"]) ? 'Apartamento com '.$immobile["room"].' quartos e apenas R$ '.
         $immobile["condominium"].' de condomínio para você.': 'Casa com '.$immobile["room"].' quartos, onde '.$hasBackyard.'.';
-
+        
         echo '
         <div class="column">
         <h2 id="title-city">'.$immobile["address"].'</h2>
