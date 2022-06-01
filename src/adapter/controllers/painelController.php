@@ -21,14 +21,14 @@ if($method == "POST") {
   move_uploaded_file($file["tmp_name"], "$dir/".$file["name"]);
 
   // verifica se os campos estão preenchidos
-  $address = isset($_POST["address"]) ? $_POST["address"] : null;
-  $value = isset($_POST["value"]) ? intval($_POST["value"]) : null;
-  $quantityRoom = isset($_POST["room"]) ? intval($_POST["room"]) : null;
+  $address = isset($_POST["address"]) ? htmlspecialchars(filter_input(INPUT_POST, 'address'), ENT_QUOTES) : null;
+  $value = isset($_POST["value"]) ? filter_input(INPUT_POST, 'value', FILTER_VALIDATE_INT) : null;
+  $quantityRoom = isset($_POST["room"]) ? intval(htmlspecialchars(filter_input(INPUT_POST, 'room'), ENT_QUOTES)) : null;
   $condominium = 0;
   $backyard = false;
 
   if(!empty($_POST["condominium"])) {
-    $condominium = intval($_POST["condominium"]);
+    $condominium = intval(htmlspecialchars($_POST["condominium"], ENT_QUOTES));
     AddApartamentRepo::save($condominium, $imageImmobile, $value, $address, $quantityRoom);
   }
 
